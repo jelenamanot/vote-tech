@@ -7,11 +7,13 @@ import './currentUser.scss';
 const CurrentUser = ({ user }) => {
 	return(
 		<div className="CurrentUser">
-			<img 
-				src={user.photoURL}
-				className="userPhoto"
-				alt={user.displayName}
-			/>
+			<div className="photoWrap">
+				<img 
+					src={user.photoURL}
+					className="userPhoto"
+					alt={user.displayName}
+				/>
+			</div>
 			<div className="userId">
 				<h4>{user.displayName}</h4>
 				<p>{user.email}</p>
