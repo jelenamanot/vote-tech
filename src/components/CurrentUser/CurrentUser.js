@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { auth } from '../../firebase';
 
 import './currentUser.scss';
@@ -23,6 +24,13 @@ const CurrentUser = ({ user }) => {
 			</div>
 		</div>
 	);
+};
+
+CurrentUser.propTypes = {
+	user: PropTypes.object,
+	displayName: PropTypes.string,
+	email: PropTypes.string,
+	photoURL: PropTypes.string
 };
 
 export default CurrentUser;
