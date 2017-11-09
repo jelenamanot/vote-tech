@@ -1,0 +1,9 @@
+@import '../../css/variables';
+
+.Header {
+   text-align: center;
+   padding: 15px;
+   h1 {
+      color: $main-color;
+   }
+}
