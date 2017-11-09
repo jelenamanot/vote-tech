@@ -4,6 +4,7 @@ import { auth } from '../firebase';
 import Header from './Header/Header';
 import SignIn from './SignIn/SignIn';
 import CurrentUser from './CurrentUser/CurrentUser';
+import NewTech from './NewTech/NewTech';
 
 import './app.scss';
 
@@ -29,7 +30,12 @@ class App extends React.Component {
 			<div className="App">
 				<Header />
 				{
-					currentUser ? <CurrentUser user={currentUser} /> : <SignIn />
+					currentUser ? 
+						<div>
+							<CurrentUser user={currentUser} /> 
+							<NewTech />
+						</div>
+						: <SignIn />
 				}
 			</div>
 		);
