@@ -16,11 +16,8 @@ body {
    background-color: $light-color;
    margin: 0;
    padding: 0;
-}
-
-.App {
-   width: 1000px;
-   margin: 0 auto;
+   background-image: url($bg-img);   
+   background-size: cover;
 }
 
 // buttons

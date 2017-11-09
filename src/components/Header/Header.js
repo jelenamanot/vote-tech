@@ -4,8 +4,8 @@ import './header.scss';
 
 const Header = () => {
 	return(
-		<div>
-			<h1>Vote tech</h1>
+		<div className="Header">
+			<h1>vote tech</h1>
 		</div>
 	);
 };

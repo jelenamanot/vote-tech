@@ -5,6 +5,8 @@ import Header from './Header/Header';
 import SignIn from './SignIn/SignIn';
 import CurrentUser from './CurrentUser/CurrentUser';
 
+import './app.scss';
+
 class App extends React.Component {
 	constructor(props) {
 		super(props);
