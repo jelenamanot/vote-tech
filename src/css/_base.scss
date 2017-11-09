@@ -20,6 +20,18 @@ body {
    background-size: cover;
 }
 
+.clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+ }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
 // buttons
 .btn {
    background-color: darken($main-color, 10%);
@@ -36,3 +48,17 @@ body {
 }
 .btn:hover { background-color: $main-color; }
 .btn:focus { outline: none; }
+
+// placeholder styling
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+   color: $light-color;
+}
+::-moz-placeholder { /* Firefox 19+ */
+   color: $light-color;
+}
+:-ms-input-placeholder { /* IE 10+ */
+   color: $light-color;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: $light-color;
+}
