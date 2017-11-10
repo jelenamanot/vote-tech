@@ -42,7 +42,7 @@ class App extends React.Component {
 							<CurrentUser user={currentUser} /> 
 							<NewTech />
 							<div className="clearfix"></div>
-							<Tech tech={tech} />
+							<Tech tech={tech} currentUser={currentUser} />
 						</div>
 						: <SignIn />
 				}
