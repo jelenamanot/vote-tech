@@ -1,0 +1,15 @@
+/*Small tablet to big tablet: 768px-1022px*/
+@media only screen and (max-width: 1023px) {
+	.App { width: 90%;}
+}
+
+/*Small phones to small tablets: 481px-767px*/
+@media only screen and (max-width: 767px) {
+	.App { margin-top: 20px; margin-bottom: 20px;}
+	.CurrentUser { width: 100%; }
+	.NewTech { width: 100%; margin-left: 0; }
+	.SingleTech {
+		width: 100%;
+		float: none;
+	}
+}
