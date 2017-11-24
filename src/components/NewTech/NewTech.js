@@ -1,6 +1,5 @@
 import React from 'react';
 import { database } from '../../firebase';
-import { PropTypes } from 'prop-types';
 import './newTech.scss';
 
 class NewTech extends React.Component {
@@ -24,6 +23,7 @@ class NewTech extends React.Component {
 		const { name } = this.state;
 		return(
 			<form className="NewTech"> 
+				<h2>Enter some tech for users to vote for</h2>
 				<input 
 					type="text"
 					value={ name }

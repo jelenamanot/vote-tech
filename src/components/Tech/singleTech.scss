@@ -1,18 +1,15 @@
 @import '../../css/variables';
 
 .SingleTech {
-   width: 32%;
+   width: 32.3%;
    float: left;
    text-align: center;
-   border: 1px solid $light-color;
-   margin-right: 1%;
-   margin-top: 1%;
+	border: 1px solid $light-color;
+	margin: 1% 1% 0 0;
    border-radius: 3px;
    padding: 10px;
-   background-color: rgba(darken($main-color, 20%), 0.3);
-   hr {
-      border-width: 0.5px;
-   }
+	background-color: rgba(darken($main-color, 20%), 0.3);
+   hr { border-width: 0.5px; }
    // --- Tech name ---
    p {
       color: $light-color;
